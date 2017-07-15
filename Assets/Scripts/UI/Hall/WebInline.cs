@@ -47,11 +47,11 @@ public class WebInline : MonoBehaviour
 			break;
 		case WebType.Ranking:
 			title = "排行榜";
-			url = GameApp.GameData.BackStorgeUrl+
-				"/ReferencePage/ScoreRanking.aspx?Platform="+Application.platform+
-					"&UserID="+GameApp.GameData.UserInfo.UserID+
-					"&Token="+GameApp.GameData.PrivateKey;
-			break;
+                url =   GameApp.GameData.BackStorgeUrl +
+                "/ReferencePage/ScoreRanking.aspx?Platform=" + Application.platform +
+                    "&UserID=" + GameApp.GameData.UserInfo.UserID +
+                    "&Token=" + GameApp.GameData.PrivateKey;
+                break;
 		case WebType.Share:
 			title = "分享";
 			url = GameApp.GameData.BackStorgeUrl+

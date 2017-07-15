@@ -1643,21 +1643,21 @@ namespace com.QH.QPGame.BJL
 					_resultCount[3]++;
 					_result = 3;
 					o_winArea[GameLogic.AREA_Z].SetActive(true);
-					if(point2 == 6)
-					{
-						_resultCount[GameLogic.AREA_Z]++;
-						o_openCard_Bg.transform.FindChild("img_cj6").gameObject.SetActive(true);
-						if(lUserScore < 0)
-						{
-							o_openCard_Bg.transform.FindChild("img_cj6").GetComponent<UISprite>().spriteName = "cj6_grey";
-						}else
-						{
-							o_openCard_Bg.transform.FindChild("img_cj6").GetComponent<UISprite>().spriteName = "cj6_gold";
-						}
-						o_winArea[GameLogic.AREA_CJ].SetActive(true);
-					}
-					else
-					{
+					//if(point2 == 6)
+					//{
+					//	_resultCount[GameLogic.AREA_Z]++;
+					//	o_openCard_Bg.transform.FindChild("img_cj6").gameObject.SetActive(true);
+					//	if(lUserScore < 0)
+					//	{
+					//		o_openCard_Bg.transform.FindChild("img_cj6").GetComponent<UISprite>().spriteName = "cj6_grey";
+					//	}else
+					//	{
+					//		o_openCard_Bg.transform.FindChild("img_cj6").GetComponent<UISprite>().spriteName = "cj6_gold";
+					//	}
+					//	o_winArea[GameLogic.AREA_CJ].SetActive(true);
+					//}
+					//else
+					//{
 						o_openCard_Bg.transform.FindChild("img_word").gameObject.SetActive(true);
 						if(lUserScore < 0)
 						{
@@ -1668,7 +1668,7 @@ namespace com.QH.QPGame.BJL
 							o_openCard_Bg.transform.FindChild("img_word").GetComponent<UISprite>().spriteName = "js_zhuang";
 							o_openCard_Bg.transform.FindChild("img_word").FindChild("img_bg").GetComponent<UISprite>().spriteName = "js_word_bg";
 						}
-					}
+				//	}
 
 					o_ScoreZ_lbl.GetComponent<UILabel>().text = transMoney(lUserScore);	
 					if(lUserScore < 0)
