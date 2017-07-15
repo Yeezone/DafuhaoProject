@@ -41,9 +41,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: c7d60b7d38b07f940b5ccdf904540c0d, type: 2}
   mSprites:
+  - name: im_jin
+    x: 85
+    y: 428
+    width: 84
+    height: 84
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: im_tong
+    x: 170
+    y: 428
+    width: 84
+    height: 84
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: im_yin
+    x: 0
+    y: 428
+    width: 84
+    height: 84
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: jinbi_n0
-    x: 137
-    y: 181
+    x: 112
+    y: 311
     width: 22
     height: 32
     borderLeft: 0
@@ -55,8 +94,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: jinbi_n1
-    x: 243
-    y: 225
+    x: 239
+    y: 353
     width: 12
     height: 31
     borderLeft: 0
@@ -68,8 +107,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 3
   - name: jinbi_n2
-    x: 61
-    y: 108
+    x: 227
+    y: 312
     width: 22
     height: 31
     borderLeft: 0
@@ -81,8 +120,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 3
   - name: jinbi_n3
-    x: 160
-    y: 181
+    x: 204
+    y: 311
     width: 22
     height: 32
     borderLeft: 0
@@ -94,8 +133,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: jinbi_n4
-    x: 229
-    y: 182
+    x: 0
+    y: 270
     width: 22
     height: 31
     borderLeft: 0
@@ -107,8 +146,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 3
   - name: jinbi_n5
-    x: 206
-    y: 181
+    x: 135
+    y: 311
     width: 22
     height: 32
     borderLeft: 0
@@ -120,8 +159,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: jinbi_n6
-    x: 114
-    y: 181
+    x: 158
+    y: 311
     width: 22
     height: 32
     borderLeft: 0
@@ -133,8 +172,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: jinbi_n7
-    x: 61
-    y: 140
+    x: 23
+    y: 270
     width: 22
     height: 31
     borderLeft: 0
@@ -146,8 +185,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 3
   - name: jinbi_n8
-    x: 183
-    y: 181
+    x: 181
+    y: 311
     width: 22
     height: 32
     borderLeft: 0
@@ -159,8 +198,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: jinbi_n9
-    x: 61
-    y: 75
+    x: 0
+    y: 237
     width: 21
     height: 32
     borderLeft: 0
@@ -172,8 +211,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: number_jinbishu0
-    x: 232
-    y: 143
+    x: 148
+    y: 241
     width: 20
     height: 28
     borderLeft: 0
@@ -185,8 +224,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu1
-    x: 147
-    y: 114
+    x: 240
+    y: 273
     width: 12
     height: 28
     borderLeft: 0
@@ -198,8 +237,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu2
-    x: 84
-    y: 56
+    x: 106
+    y: 241
     width: 20
     height: 28
     borderLeft: 0
@@ -211,8 +250,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu3
-    x: 148
-    y: 143
+    x: 85
+    y: 241
     width: 20
     height: 28
     borderLeft: 0
@@ -224,8 +263,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu4
-    x: 84
-    y: 143
+    x: 68
+    y: 273
     width: 21
     height: 28
     borderLeft: 0
@@ -237,8 +276,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu5
-    x: 84
-    y: 85
+    x: 112
+    y: 273
     width: 21
     height: 28
     borderLeft: 0
@@ -250,8 +289,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu6
-    x: 106
-    y: 85
+    x: 177
+    y: 273
     width: 20
     height: 28
     borderLeft: 0
@@ -263,8 +302,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu7
-    x: 190
-    y: 143
+    x: 127
+    y: 241
     width: 20
     height: 28
     borderLeft: 0
@@ -276,8 +315,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu8
-    x: 211
-    y: 143
+    x: 156
+    y: 273
     width: 20
     height: 28
     borderLeft: 0
@@ -289,8 +328,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_jinbishu9
-    x: 106
-    y: 27
+    x: 210
+    y: 241
     width: 19
     height: 28
     borderLeft: 0
@@ -302,8 +341,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_paihang0
-    x: 0
-    y: 171
+    x: 93
+    y: 385
     width: 30
     height: 42
     borderLeft: 0
@@ -315,8 +354,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_paihang1
-    x: 61
-    y: 172
+    x: 59
+    y: 302
     width: 26
     height: 41
     borderLeft: 0
@@ -328,8 +367,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: number_paihang2
-    x: 0
-    y: 43
+    x: 155
+    y: 386
     width: 30
     height: 41
     borderLeft: 0
@@ -342,7 +381,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: number_paihang3
     x: 0
-    y: 85
+    y: 385
     width: 30
     height: 42
     borderLeft: 0
@@ -354,8 +393,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_paihang4
-    x: 153
-    y: 215
+    x: 0
+    y: 302
     width: 29
     height: 41
     borderLeft: 0
@@ -367,8 +406,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: number_paihang5
-    x: 0
-    y: 214
+    x: 62
+    y: 385
     width: 30
     height: 42
     borderLeft: 0
@@ -380,8 +419,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_paihang6
-    x: 0
-    y: 128
+    x: 31
+    y: 385
     width: 30
     height: 42
     borderLeft: 0
@@ -393,8 +432,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_paihang7
-    x: 0
-    y: 1
+    x: 124
+    y: 386
     width: 30
     height: 41
     borderLeft: 0
@@ -406,8 +445,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: number_paihang8
-    x: 31
-    y: 214
+    x: 186
+    y: 385
     width: 29
     height: 42
     borderLeft: 0
@@ -419,8 +458,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_paihang9
-    x: 61
-    y: 214
+    x: 216
+    y: 385
     width: 29
     height: 42
     borderLeft: 0
@@ -432,8 +471,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: number_VIP0
-    x: 106
-    y: 143
+    x: 64
+    y: 241
     width: 20
     height: 28
     borderLeft: 0
@@ -445,8 +484,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP1
-    x: 127
-    y: 114
+    x: 190
+    y: 241
     width: 19
     height: 28
     borderLeft: 0
@@ -458,8 +497,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP2
-    x: 127
-    y: 143
+    x: 43
+    y: 241
     width: 20
     height: 28
     borderLeft: 0
@@ -471,8 +510,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP3
-    x: 84
-    y: 114
+    x: 134
+    y: 273
     width: 21
     height: 28
     borderLeft: 0
@@ -484,8 +523,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP4
-    x: 61
-    y: 17
+    x: 46
+    y: 273
     width: 21
     height: 28
     borderLeft: 0
@@ -497,8 +536,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP5
-    x: 169
-    y: 143
+    x: 198
+    y: 273
     width: 20
     height: 28
     borderLeft: 0
@@ -510,8 +549,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP6
-    x: 84
-    y: 27
+    x: 169
+    y: 241
     width: 20
     height: 28
     borderLeft: 0
@@ -523,8 +562,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP7
-    x: 61
-    y: 46
+    x: 90
+    y: 273
     width: 21
     height: 28
     borderLeft: 0
@@ -536,8 +575,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP8
-    x: 106
-    y: 114
+    x: 219
+    y: 273
     width: 20
     height: 28
     borderLeft: 0
@@ -549,8 +588,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: number_VIP9
-    x: 106
-    y: 56
+    x: 22
+    y: 241
     width: 20
     height: 28
     borderLeft: 0
@@ -562,8 +601,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 0
   - name: VIP_n0
-    x: 31
-    y: 132
+    x: 181
+    y: 344
     width: 28
     height: 40
     borderLeft: 0
@@ -575,8 +614,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: VIP_n1
-    x: 88
-    y: 173
+    x: 86
+    y: 303
     width: 25
     height: 40
     borderLeft: 0
@@ -588,8 +627,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: VIP_n2
-    x: 31
-    y: 91
+    x: 210
+    y: 344
     width: 28
     height: 40
     borderLeft: 0
@@ -601,8 +640,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: VIP_n3
-    x: 183
-    y: 216
+    x: 62
+    y: 344
     width: 29
     height: 40
     borderLeft: 0
@@ -614,8 +653,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: VIP_n4
-    x: 213
-    y: 216
+    x: 122
+    y: 344
     width: 29
     height: 40
     borderLeft: 0
@@ -627,8 +666,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: VIP_n5
-    x: 31
-    y: 173
+    x: 92
+    y: 344
     width: 29
     height: 40
     borderLeft: 0
@@ -640,8 +679,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: VIP_n6
-    x: 31
-    y: 10
+    x: 30
+    y: 304
     width: 28
     height: 39
     borderLeft: 0
@@ -653,8 +692,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: VIP_n7
-    x: 122
-    y: 216
+    x: 31
+    y: 344
     width: 30
     height: 40
     borderLeft: 0
@@ -666,8 +705,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: VIP_n8
-    x: 91
-    y: 216
+    x: 0
+    y: 344
     width: 30
     height: 40
     borderLeft: 0
@@ -679,8 +718,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: VIP_n9
-    x: 31
-    y: 50
+    x: 152
+    y: 344
     width: 28
     height: 40
     borderLeft: 0
