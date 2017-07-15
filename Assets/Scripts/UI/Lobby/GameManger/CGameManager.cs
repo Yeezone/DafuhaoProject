@@ -308,11 +308,14 @@ public class CGameManager : MonoBehaviour {
 					if(m_objGameGrid.GetComponentInParent<UIScrollView>().movement == UIScrollView.Movement.Horizontal)
 					{
 						//水平排列
-						m_lstGameItemList[i].transform.localPosition = new Vector3((float)(i*m_objGameGrid.GetComponent<UIGrid>().cellWidth),0,0);
-					}else{
-						//垂直排列
-						m_lstGameItemList[i].transform.localPosition = new Vector3(0,-(float)(i*m_objGameGrid.GetComponent<UIGrid>().cellHeight),0);
-					}
+						//m_lstGameItemList[i].transform.localPosition = new Vector3((float)(i*m_objGameGrid.GetComponent<UIGrid>().cellWidth),0,0);
+                        m_lstGameItemList[i].transform.localPosition = new Vector3(m_gameItemPoss[i].x, m_gameItemPoss[i].y, 0);
+                    }
+                    else{
+                        //垂直排列
+                        //m_lstGameItemList[i].transform.localPosition = new Vector3(0,-(float)(i*m_objGameGrid.GetComponent<UIGrid>().cellHeight),0);
+                        m_lstGameItemList[i].transform.localPosition = new Vector3(m_gameItemPoss[i].x, m_gameItemPoss[i].y, 0);
+                    }
 				}
 				// 如果是休闲版
 				if(RelaxScene_switch)
@@ -359,11 +362,14 @@ public class CGameManager : MonoBehaviour {
 					if(m_objGameGrid.GetComponentInParent<UIScrollView>().movement == UIScrollView.Movement.Horizontal)
 					{
 						//水平排列
-						m_lstGameItemList[i].transform.localPosition = new Vector3((float)(i*m_objGameGrid.GetComponent<UIWrapContent>().itemSize),0,0);
-					}else{
-						//垂直排列
-						m_lstGameItemList[i].transform.localPosition = new Vector3(0,(float)(i*m_objGameGrid.GetComponent<UIWrapContent>().itemSize),0);
-					}
+						//m_lstGameItemList[i].transform.localPosition = new Vector3((float)(i*m_objGameGrid.GetComponent<UIWrapContent>().itemSize),0,0);
+                        m_lstGameItemList[i].transform.localPosition = new Vector3(m_gameItemPoss[i].x, m_gameItemPoss[i].y, 0);
+                    }
+                    else{
+                        //垂直排列
+                        //m_lstGameItemList[i].transform.localPosition = new Vector3(0,(float)(i*m_objGameGrid.GetComponent<UIWrapContent>().itemSize),0);
+                        m_lstGameItemList[i].transform.localPosition = new Vector3(m_gameItemPoss[i].x, m_gameItemPoss[i].y, 0);
+                    }
 				}
 				if(m_lstGameItemList[i].GetComponent<TweenScale>()!=null)
 				{

@@ -4355,7 +4355,7 @@ MonoBehaviour:
   thumb: {fileID: 0}
   mBG: {fileID: 0}
   mFG: {fileID: 0}
-  mValue: 0
+  mValue: .363636345
   mFill: 3
   numberOfSteps: 0
   onChange: []
@@ -4363,7 +4363,7 @@ MonoBehaviour:
   rawValue: 1
   direction: 2
   mInverted: 0
-  mSize: .995145619
+  mSize: .999970317
   mScroll: .600000024
   mDir: 2
 --- !u!1 &125344164
@@ -5405,7 +5405,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3017
+  startingRenderQueue: 3016
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -6287,7 +6287,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3007
+  startingRenderQueue: 3005
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -7183,7 +7183,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3010
+  startingRenderQueue: 3008
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -9905,7 +9905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &385278647
 Transform:
   m_ObjectHideFlags: 0
@@ -11794,7 +11794,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3012
+  startingRenderQueue: 3010
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -12822,7 +12822,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 660, y: 275, z: 1}
+  m_Size: {x: 660, y: 450, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &495896601
 GameObject:
@@ -18172,7 +18172,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3008
+  startingRenderQueue: 3006
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -20988,7 +20988,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3019
+  startingRenderQueue: 3018
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -22511,7 +22511,7 @@ Transform:
   m_GameObject: {fileID: 933691165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00361010828, y: .00361010828, z: .00361010828}
+  m_LocalScale: {x: .00625000009, y: .00625000009, z: .00625000009}
   m_Children:
   - {fileID: 485846890}
   m_Father: {fileID: 0}
@@ -26948,7 +26948,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3012
+  startingRenderQueue: 3010
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -32548,7 +32548,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3016
+  startingRenderQueue: 3014
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -32985,7 +32985,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abfa1e78b51755046a54a2835578b9fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_gameItemPoss: []
+  m_gameItemPoss:
+  - {x: 10, y: 125, z: 0}
+  - {x: 210, y: 125, z: 0}
+  - {x: 420, y: 125, z: 0}
+  - {x: 10, y: -100, z: 0}
+  - {x: 210, y: -100, z: 0}
+  - {x: 420, y: -100, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_lstGameItemList: []
   m_objGameItemPrefab: {fileID: 170606, guid: 274988abe50315d4e8771a8ec0162341, type: 2}
   RelaxScene_switch: 0
@@ -39974,7 +39984,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1557020525}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81807633ea807d4c8e3fff7e10c6000, type: 3}
   m_Name: 
@@ -39991,7 +40001,7 @@ MonoBehaviour:
   horizontalScrollBar: {fileID: 124956908}
   verticalScrollBar: {fileID: 0}
   showScrollBars: 0
-  customMovement: {x: 1, y: 0}
+  customMovement: {x: 1, y: 1}
   contentPivot: 0
   scale: {x: 0, y: 0, z: 0}
   relativePositionOnReset: {x: 0, y: 0}
@@ -40049,15 +40059,15 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3008
+  startingRenderQueue: 3006
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
-  mClipRange: {x: 0, y: 0, z: 660, w: 350}
+  mClipRange: {x: 0, y: 0, z: 660, w: 450}
   mClipSoftness: {x: 20, y: 2}
   mDepth: 1
   mSortingOrder: 0
-  mClipOffset: {x: 220, y: 28.5400009}
+  mClipOffset: {x: 220, y: 5}
 --- !u!1 &1557892757
 GameObject:
   m_ObjectHideFlags: 0
@@ -41330,15 +41340,15 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3008
+  startingRenderQueue: 3006
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
-  mClipRange: {x: 0, y: 10, z: 850, w: 440}
+  mClipRange: {x: 0, y: 10, z: 700, w: 440}
   mClipSoftness: {x: 0, y: 0}
   mDepth: 2
   mSortingOrder: 0
-  mClipOffset: {x: 164, y: 0}
+  mClipOffset: {x: 130, y: 23}
 --- !u!1 &1586666412
 GameObject:
   m_ObjectHideFlags: 0
@@ -43854,7 +43864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1670220969
 Transform:
   m_ObjectHideFlags: 0
@@ -44522,7 +44532,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3016
+  startingRenderQueue: 3014
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -44815,7 +44825,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3010
+  startingRenderQueue: 3008
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -51655,7 +51665,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3009
+  startingRenderQueue: 3007
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -55099,7 +55109,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2141175924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 505, y: 220, z: 0}
+  m_LocalPosition: {x: 505, y: 290, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1277677399}
@@ -55131,8 +55141,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 140, y: 60, z: 0}
-  m_Center: {x: 0, y: -20, z: 0}
+  m_Size: {x: 112, y: 100, z: 0}
+  m_Center: {x: 0, y: -50, z: 0}
 --- !u!114 &2141175928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55194,13 +55204,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 102
-  mHeight: 40
+  mWidth: 112
+  mHeight: 100
   mDepth: 14
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.54999995
+  aspectRatio: 1.12
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -55211,6 +55221,6 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11456438, guid: 9962087b79f80b2419af585c0868110c, type: 2}
-  mSpriteName: lobby_returnbtn0
+  mAtlas: {fileID: 11472968, guid: 109c491ef2905924a956a2e38855b1e3, type: 2}
+  mSpriteName: hall_icon1
   mFillCenter: 1

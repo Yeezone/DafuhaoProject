@@ -43,7 +43,6 @@ GameObject:
   - 65: {fileID: 6536122}
   - 114: {fileID: 11419784}
   - 114: {fileID: 11472936}
-  - 114: {fileID: 11424072}
   - 114: {fileID: 11412142}
   - 114: {fileID: 11464390}
   - 114: {fileID: 11487200}
@@ -218,7 +217,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 206, y: 274, z: 0}
+  m_Size: {x: 140, y: 186, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11412142
 MonoBehaviour:
@@ -258,17 +257,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollView: {fileID: 0}
   draggablePanel: {fileID: 0}
---- !u!114 &11424072
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72af25c2a1299f94a86fa9cace6e252a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11437554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -453,12 +441,12 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 194
-  mHeight: 260
+  mWidth: 140
+  mHeight: 188
   mDepth: 11
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
-  keepAspectRatio: 0
+  keepAspectRatio: 1
   aspectRatio: .746153831
   mType: 1
   mFillDirection: 4
@@ -503,13 +491,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 200
-  mHeight: 246
+  mWidth: 160
+  mHeight: 197
   mDepth: 13
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
-  keepAspectRatio: 0
-  aspectRatio: .81362009
+  keepAspectRatio: 1
+  aspectRatio: .81300813
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -553,12 +541,12 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 206
-  mHeight: 274
+  mWidth: 140
+  mHeight: 186
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
-  keepAspectRatio: 0
+  keepAspectRatio: 1
   aspectRatio: .751824796
 --- !u!114 &11478940
 MonoBehaviour:
@@ -590,12 +578,12 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 172
-  mHeight: 34
+  mWidth: 140
+  mHeight: 28
   mDepth: 13
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
-  keepAspectRatio: 0
+  keepAspectRatio: 1
   aspectRatio: 5.05882359
   mType: 0
   mFillDirection: 4
