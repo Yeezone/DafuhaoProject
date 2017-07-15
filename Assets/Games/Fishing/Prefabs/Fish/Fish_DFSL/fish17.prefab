@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &149038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 472008}
+  - 114: {fileID: 11457474}
+  - 60: {fileID: 6053654}
+  - 114: {fileID: 11494636}
+  - 114: {fileID: 11403262}
+  - 114: {fileID: 11494670}
+  m_Layer: 0
+  m_Name: fish17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!60 &6053654
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149038}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 56.1599121, y: -33.7353516}
+      - {x: 32.864624, y: -60.9193115}
+      - {x: 82.6466675, y: -36.3833008}
+      - {x: 160.531494, y: 5.04663086}
+      - {x: 134.424683, y: 19.6083374}
+      - {x: 109.183044, y: 56.7224731}
+      - {x: 61.1974487, y: 55.0205078}
+      - {x: 40.0007324, y: 54.8850708}
+      - {x: -3.64123535, y: 67.1802368}
+      - {x: -26.0835571, y: 60.475708}
+      - {x: -24.3027344, y: 31.7158203}
+      - {x: -66.3718872, y: 21.9116821}
+      - {x: -91.2961426, y: 52.8619385}
+      - {x: -117.158325, y: 57.3878174}
+      - {x: -124.41803, y: 27.1742554}
+      - {x: -151.585388, y: -9.04144287}
+      - {x: -74.78302, y: 4.12756348}
+--- !u!114 &11403262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9bfb5c080dac24cbbc6c9f595ed413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mFPS: 10
+  mPrefix: fish17-
+  mLoop: 1
+  mSnap: 0
+--- !u!114 &11457474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48964f1817df9664a9499608e72404d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cur_Collider: {fileID: 0}
+  singleShadow: {fileID: 0}
+  canonID: 0
+  bulletCost: 0
+  dead: 0
+  multi: 100
+  serverMulti: 0
+  power: 0
+  fishServerID: 0
+  shakeCam: 1
+  fishPool: 0
+  localScale: {x: 1, y: 1, z: 1}
+  FishAnimSpeed: 10
+  fishType: 0
+  killNorml: 0
+  killYWDJ: 0
+  killQuanPing: 0
+  killBlackHall: 0
+  killLikui: 0
+  canNotPlayUntilRecycle: 0
+  ywdjKillFishPool: -1
+  ywdjLine: {fileID: 0}
+  highScorePrefab: {fileID: 438660, guid: aa6b905612924c34987c2fd2e97a1fe2, type: 2}
+  showHighScoreWhenFishDead: 1
+  beAbsorbed: 0
+  locking: 0
+  lockFishOrder: 80
+  deadAudio: {fileID: 8300000, guid: 04ec05427cc2a3144b97e0c5706beb63, type: 3}
+  deadProbability: 50
+  coinType: 1
+  coinNum: 9
+  deadOrderInLayer: 20
+  deadTimeLength: 2
+  specialFishDeadState: 0
+  move2CenterTimeLength: 3
+  blackHallAbsorbMulti: 3
+  blackHallNumPrefab: {fileID: 0}
+  blackHallHeight: 0
+  blackHallScale: {x: 0, y: 0, z: 0}
+  blackHallLine: {fileID: 0}
+  LikuiBeginBeilv: 40
+  LiKuiBeilvTime: 0
+  LiKuiAddBeilv: 0
+  LiKuibeilvHigh: 0
+  LikuiNumPrefab: {fileID: 0}
+  LikuiHeight: 0
+  LikuiNumScale: {x: 0, y: 0, z: 0}
+  likuiCurrent: 0
+  lastMap2ClearFish: 0
+  hurtColor: {r: 1, g: .397058845, b: .397058845, a: 1}
+  hurtTimeLength: .5
+  deadEffList:
+  - time2CreateEff: 0
+    targetTime2PlayEff: 0
+    eff: {fileID: 400000, guid: 02141b6a5066c3e41a030498373b6950, type: 2}
+    fixedOnScreen: 0
+    haveCreatedPar: 0
+    pos: {x: 0, y: 0, z: 0}
+    euler: {x: 0, y: 0, z: 0}
+    scale: {x: 30, y: 30, z: 1}
+    moveEff: 0
+    effMove2Pos: {x: 0, y: 0, z: 0}
+    effMoveTimeLength: 0
+  fishAnimFPS: 10
+--- !u!114 &11494636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 312
+  mHeight: 134
+  mDepth: 7
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 2.32835817
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11481590, guid: 90398c74fccd606489014a8c58382d91, type: 2}
+  mSpriteName: fish17-00
+  mFillCenter: 1
+--- !u!114 &11494670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149038}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 04ec05427cc2a3144b97e0c5706beb63, type: 3}
+  trigger: 0
+  volume: 1
+  pitch: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].eff
+      value: 
+      objectReference: {fileID: 400000, guid: 02141b6a5066c3e41a030498373b6950, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e17254348d2e33447bda6e44bd29922a,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mAtlas
+      value: 
+      objectReference: {fileID: 11414306, guid: f988cd629d533174d81db88edbd55a99,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: mFPS
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mPrefix
+      value: fish17-
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSpriteName
+      value: fish17-00
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSnap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mWidth
+      value: 312
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: aspectRatio
+      value: 2.32835817
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mHeight
+      value: 134
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 149038}
+  m_IsPrefabParent: 1

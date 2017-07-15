@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &126890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 449474}
+  - 114: {fileID: 11441386}
+  - 60: {fileID: 6006838}
+  - 114: {fileID: 11409480}
+  - 114: {fileID: 11465992}
+  - 114: {fileID: 11437224}
+  m_Layer: 0
+  m_Name: fish11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &449474
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!60 &6006838
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126890}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 58.4117432, y: 3.5536499}
+      - {x: 31.9768066, y: 55.2789307}
+      - {x: -23.8404541, y: 34.602356}
+      - {x: -9.73266602, y: 7.59893799}
+      - {x: -50.1237183, y: 7.60079956}
+      - {x: -11.0864258, y: -6.64855957}
+      - {x: -24.1242676, y: -32.21521}
+      - {x: 31.8942871, y: -55.7637329}
+--- !u!114 &11409480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 256
+  mHeight: 64
+  mDepth: 7
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 4
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11429066, guid: 8025b8e67fed49744903058c1ce73b13, type: 2}
+  mSpriteName: fish11-00
+  mFillCenter: 1
+--- !u!114 &11437224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126890}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 7fd94f09bb44d6340b0e23f4a6f12b2b, type: 3}
+  trigger: 6
+  volume: 1
+  pitch: 1
+--- !u!114 &11441386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48964f1817df9664a9499608e72404d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cur_Collider: {fileID: 0}
+  singleShadow: {fileID: 0}
+  canonID: 0
+  bulletCost: 0
+  dead: 0
+  multi: 15
+  serverMulti: 0
+  power: 0
+  fishServerID: 0
+  shakeCam: 0
+  fishPool: 0
+  localScale: {x: 1.29999995, y: 1.29999995, z: 1}
+  FishAnimSpeed: 10
+  fishType: 0
+  killNorml: 0
+  killYWDJ: 0
+  killQuanPing: 0
+  killBlackHall: 0
+  killLikui: 0
+  canNotPlayUntilRecycle: 0
+  ywdjKillFishPool: -1
+  ywdjLine: {fileID: 0}
+  highScorePrefab: {fileID: 0}
+  showHighScoreWhenFishDead: 1
+  beAbsorbed: 0
+  locking: 0
+  lockFishOrder: 15
+  deadAudio: {fileID: 8300000, guid: 7fd94f09bb44d6340b0e23f4a6f12b2b, type: 3}
+  deadProbability: 50
+  coinType: 1
+  coinNum: 4
+  deadOrderInLayer: 20
+  deadTimeLength: 2
+  specialFishDeadState: 0
+  move2CenterTimeLength: 3
+  blackHallAbsorbMulti: 3
+  blackHallNumPrefab: {fileID: 0}
+  blackHallHeight: 0
+  blackHallScale: {x: 0, y: 0, z: 0}
+  blackHallLine: {fileID: 0}
+  LikuiBeginBeilv: 40
+  LiKuiBeilvTime: 0
+  LiKuiAddBeilv: 0
+  LiKuibeilvHigh: 0
+  LikuiNumPrefab: {fileID: 0}
+  LikuiHeight: 0
+  LikuiNumScale: {x: 0, y: 0, z: 0}
+  likuiCurrent: 0
+  lastMap2ClearFish: 0
+  hurtColor: {r: 1, g: .325490206, b: .325490206, a: 1}
+  hurtTimeLength: .5
+  deadEffList: []
+  fishAnimFPS: 10
+--- !u!114 &11465992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9bfb5c080dac24cbbc6c9f595ed413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mFPS: 10
+  mPrefix: fish11-
+  mLoop: 1
+  mSnap: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 17f2dd2c6f2f99243ab8f9325d7b569b,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3398efebf5e95124c83f9b0f69629d7e, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mAtlas
+      value: 
+      objectReference: {fileID: 11412304, guid: 32f3804569c23cd4a853a5ba01f6c2ca,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: mFPS
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSnap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSpriteName
+      value: fish11-00
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mPrefix
+      value: fish11-
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mWidth
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: aspectRatio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mHeight
+      value: 128
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 126890}
+  m_IsPrefabParent: 1

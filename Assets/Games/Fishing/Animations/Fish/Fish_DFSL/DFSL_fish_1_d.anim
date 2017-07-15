@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: DFSL_fish_1_d
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: b995a769e15a82f42b8eb84406568d71, type: 3}
+    - time: .0250000004
+      value: {fileID: 21300000, guid: aee0dcb1a86aa8346ada62bb8ad0af83, type: 3}
+    - time: .0500000007
+      value: {fileID: 21300000, guid: eba85370c687fb4439af2f33f2fa98e2, type: 3}
+    - time: .075000003
+      value: {fileID: 21300000, guid: 4eafb91ba8dd776459e271940c5aa888, type: 3}
+    - time: .100000001
+      value: {fileID: 21300000, guid: 89e3d840020b6e14a911def4e66d6643, type: 3}
+    - time: .125
+      value: {fileID: 21300000, guid: 7b2f2183498665e4f9605907c06d20cc, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 40
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 0
+      attribute: 0
+      script: {fileID: 0}
+      classID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: b995a769e15a82f42b8eb84406568d71, type: 3}
+    - {fileID: 21300000, guid: aee0dcb1a86aa8346ada62bb8ad0af83, type: 3}
+    - {fileID: 21300000, guid: eba85370c687fb4439af2f33f2fa98e2, type: 3}
+    - {fileID: 21300000, guid: 4eafb91ba8dd776459e271940c5aa888, type: 3}
+    - {fileID: 21300000, guid: 89e3d840020b6e14a911def4e66d6643, type: 3}
+    - {fileID: 21300000, guid: 7b2f2183498665e4f9605907c06d20cc, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: .150000006
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

@@ -1,0 +1,792 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &137734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 417924}
+  - 114: {fileID: 11454662}
+  - 60: {fileID: 6075684}
+  - 114: {fileID: 11471552}
+  - 114: {fileID: 11463340}
+  m_Layer: 0
+  m_Name: quanpin0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417924
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!60 &6075684
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 119.104492, y: -33.3689575}
+      - {x: 99.4968414, y: 41.4864807}
+      - {x: 108.292747, y: 121.207619}
+      - {x: 59.8346977, y: 146.41185}
+      - {x: 17.0093384, y: 50.4351196}
+      - {x: -80.0653763, y: 157.565109}
+      - {x: -154.193481, y: 149.676697}
+      - {x: -174.05925, y: 87.3926468}
+      - {x: -220.389038, y: 108.89917}
+      - {x: -226.953857, y: 91.6013794}
+      - {x: -97.4682617, y: 29.6014404}
+      - {x: -103.884033, y: 3.01449585}
+      - {x: -36.9228516, y: -43.4443512}
+      - {x: -47.3266602, y: -67.5154724}
+      - {x: 34.9360352, y: -156.62413}
+      - {x: 44.1807861, y: -112.777466}
+      - {x: 104.30542, y: -82.3184204}
+      - {x: 59.9008904, y: -30.4705143}
+--- !u!114 &11454662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48964f1817df9664a9499608e72404d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cur_Collider: {fileID: 0}
+  singleShadow: {fileID: 0}
+  canonID: 0
+  bulletCost: 0
+  dead: 0
+  multi: 500
+  serverMulti: 0
+  power: 20
+  fishServerID: 0
+  shakeCam: 1
+  fishPool: 0
+  localScale: {x: 1, y: 1, z: 1}
+  FishAnimSpeed: 10
+  fishType: 2
+  killNorml: 1
+  killYWDJ: 1
+  killQuanPing: 0
+  killBlackHall: 0
+  killLikui: 0
+  canNotPlayUntilRecycle: 1
+  ywdjKillFishPool: 0
+  ywdjLine: {fileID: 0}
+  highScorePrefab: {fileID: 457488, guid: fba3ffd22da92a241b6af7aae983cf16, type: 2}
+  showHighScoreWhenFishDead: 0
+  beAbsorbed: 0
+  locking: 0
+  lockFishOrder: 500
+  deadAudio: {fileID: 0}
+  deadProbability: 0
+  coinType: 0
+  coinNum: 0
+  deadOrderInLayer: 20
+  deadTimeLength: .209999993
+  specialFishDeadState: 0
+  move2CenterTimeLength: 0
+  blackHallAbsorbMulti: 3
+  blackHallNumPrefab: {fileID: 0}
+  blackHallHeight: 0
+  blackHallScale: {x: 0, y: 0, z: 0}
+  blackHallLine: {fileID: 0}
+  LikuiBeginBeilv: 40
+  LiKuiBeilvTime: 0
+  LiKuiAddBeilv: 0
+  LiKuibeilvHigh: 0
+  LikuiNumPrefab: {fileID: 0}
+  LikuiHeight: 0
+  LikuiNumScale: {x: 0, y: 0, z: 0}
+  likuiCurrent: 0
+  lastMap2ClearFish: 0
+  hurtColor: {r: 1, g: .325490206, b: .325490206, a: 1}
+  hurtTimeLength: .200000003
+  deadEffList:
+  - time2CreateEff: 0
+    targetTime2PlayEff: 0
+    eff: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    fixedOnScreen: 0
+    haveCreatedPar: 0
+    pos: {x: 0, y: 0, z: 0}
+    euler: {x: 0, y: 0, z: 0}
+    scale: {x: 30, y: 30, z: 1}
+    moveEff: 0
+    effMove2Pos: {x: 0, y: 0, z: 0}
+    effMoveTimeLength: 0
+  - time2CreateEff: 0
+    targetTime2PlayEff: 0
+    eff: {fileID: 400000, guid: 02141b6a5066c3e41a030498373b6950, type: 2}
+    fixedOnScreen: 0
+    haveCreatedPar: 0
+    pos: {x: 0, y: 0, z: 0}
+    euler: {x: 0, y: 0, z: 0}
+    scale: {x: 30, y: 30, z: 1}
+    moveEff: 0
+    effMove2Pos: {x: 0, y: 0, z: 0}
+    effMoveTimeLength: 0
+  fishAnimFPS: 10
+--- !u!114 &11463340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9bfb5c080dac24cbbc6c9f595ed413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mFPS: 8
+  mPrefix: dasheng-
+  mLoop: 1
+  mSnap: 0
+--- !u!114 &11471552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 512
+  mHeight: 512
+  mDepth: 7
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 1
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11487146, guid: 8191f8afe701c4541aeff5e6247987f8, type: 2}
+  mSpriteName: dasheng-0
+  mFillCenter: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d482f6ef878cdb4093afbd4d8b7a2a4,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6ae907185f6d0d84b948b036ce711b3f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].time2CreateEff
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].time2CreateEff
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].time2CreateEff
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].time2CreateEff
+      value: .400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].time2CreateEff
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].time2CreateEff
+      value: .600000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].time2CreateEff
+      value: .699999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].eff
+      value: 
+      objectReference: {fileID: 432620, guid: 1957dcb6f39cc3449a10b53d5f2af870, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].eff
+      value: 
+      objectReference: {fileID: 465880, guid: 2f09f8d49d546cb409ea55db49c4da4a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].eff
+      value: 
+      objectReference: {fileID: 423076, guid: 87e2460e041f4d44590a5d4a71f6183c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].eff
+      value: 
+      objectReference: {fileID: 423076, guid: 1f775214619994b45a164f1ea10af27f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].eff
+      value: 
+      objectReference: {fileID: 423076, guid: d90814c94ebb56342aeecc9f06588ef3, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].eff
+      value: 
+      objectReference: {fileID: 423076, guid: 8119d2238e3b6a5439fbbaadc744d684, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].eff
+      value: 
+      objectReference: {fileID: 423076, guid: b75fa37da7215ec41a11693c5e5ff491, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].time2CreateEff
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].time2CreateEff
+      value: 2.0999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].time2CreateEff
+      value: 2.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].time2CreateEff
+      value: 2.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].time2CreateEff
+      value: 2.4000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].time2CreateEff
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].time2CreateEff
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].time2CreateEff
+      value: 2.70000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].moveEff
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].fixedOnScreen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].pos.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].pos.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].fixedOnScreen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].effMoveTimeLength
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].moveEff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].effMove2Pos.x
+      value: 673
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].effMove2Pos.y
+      value: 495
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].moveEff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].effMove2Pos.x
+      value: 918
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].effMove2Pos.y
+      value: 425
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].moveEff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].effMove2Pos.x
+      value: 918
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].effMove2Pos.y
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].moveEff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].effMove2Pos.x
+      value: 673
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].effMove2Pos.y
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].moveEff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].effMove2Pos.x
+      value: 463
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].effMove2Pos.y
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].moveEff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].effMove2Pos.x
+      value: 253
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].effMove2Pos.y
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].moveEff
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].effMove2Pos.x
+      value: 253
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].effMove2Pos.y
+      value: 425
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].pos.x
+      value: 463
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].pos.y
+      value: 495
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].pos.x
+      value: 673
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].pos.y
+      value: 495
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].pos.x
+      value: 918
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].pos.y
+      value: 425
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].pos.x
+      value: 918
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].pos.y
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].pos.x
+      value: 673
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].pos.y
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].pos.x
+      value: 473
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].pos.y
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].pos.x
+      value: 253
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].pos.y
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].pos.x
+      value: 253
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].pos.y
+      value: 425
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].scale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].moveEff
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].effMove2Pos.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].effMove2Pos.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].scale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mAtlas
+      value: 
+      objectReference: {fileID: 11487146, guid: 8191f8afe701c4541aeff5e6247987f8,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: mSpriteName
+      value: dasheng-0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mFPS
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSnap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mPrefix
+      value: dasheng-
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mWidth
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: aspectRatio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mHeight
+      value: 512
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 137734}
+  m_IsPrefabParent: 1

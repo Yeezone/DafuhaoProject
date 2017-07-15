@@ -1,0 +1,504 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &137734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 417924}
+  - 212: {fileID: 21231960}
+  - 95: {fileID: 9562304}
+  - 114: {fileID: 11454662}
+  - 61: {fileID: 6111154}
+  m_Layer: 9
+  m_Name: quanpin0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &166748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 427984}
+  - 212: {fileID: 21299440}
+  - 95: {fileID: 9594718}
+  m_Layer: 0
+  m_Name: bg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417924
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 800, y: 637.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 427984}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &427984
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166748}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 417924}
+  m_RootOrder: 0
+--- !u!61 &6111154
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 14.348938, y: .283081055}
+  serializedVersion: 2
+  m_Size: {x: 106.96431, y: 63.9345703}
+--- !u!95 &9562304
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d4f0abb0a39ceb46b87e8fb4d6fe284, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9594718
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166748}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7679b9c1ca211849b854b40a945fc8b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11454662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48964f1817df9664a9499608e72404d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cur_Collider: {fileID: 0}
+  singleShadow: {fileID: 0}
+  canonID: 0
+  bulletCost: 0
+  dead: 0
+  multi: 500
+  serverMulti: 0
+  power: 20
+  fishServerID: 0
+  shakeCam: 1
+  fishPool: 0
+  localScale: {x: 1.20000005, y: 1.20000005, z: 1}
+  fishType: 2
+  killNorml: 1
+  killYWDJ: 1
+  killQuanPing: 0
+  killBlackHall: 0
+  killLikui: 0
+  canNotPlayUntilRecycle: 1
+  ywdjKillFishPool: 0
+  ywdjLine: {fileID: 0}
+  highScorePrefab: {fileID: 457488, guid: 7aaa5ccd667fff640a03010ef0cf7a41, type: 2}
+  showHighScoreWhenFishDead: 0
+  beAbsorbed: 0
+  locking: 0
+  lockFishOrder: 500
+  deadAudio: {fileID: 0}
+  deadProbability: 0
+  coinType: 0
+  coinNum: 0
+  deadOrderInLayer: 20
+  deadTimeLength: 0
+  specialFishDeadState: 0
+  move2CenterTimeLength: 0
+  blackHallAbsorbMulti: 3
+  blackHallNumPrefab: {fileID: 0}
+  blackHallHeight: 0
+  blackHallScale: {x: 0, y: 0, z: 0}
+  blackHallLine: {fileID: 0}
+  LikuiBeginBeilv: 40
+  LiKuiBeilvTime: 0
+  LiKuiAddBeilv: 0
+  LiKuibeilvHigh: 0
+  LikuiNumPrefab: {fileID: 0}
+  LikuiHeight: 0
+  LikuiNumScale: {x: 0, y: 0, z: 0}
+  likuiCurrent: 0
+  lastMap2ClearFish: 0
+  hurtColor: {r: 1, g: .325490206, b: .325490206, a: 1}
+  hurtTimeLength: 0
+  deadEffList: []
+--- !u!212 &21231960
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137734}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1170784209
+  m_SortingOrder: 15
+  m_Sprite: {fileID: 21300000, guid: 3b9f1787bb777334a99171942b1291b1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!212 &21299440
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166748}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1170784209
+  m_SortingOrder: 14
+  m_Sprite: {fileID: 21300000, guid: 3b9f1787bb777334a99171942b1291b1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d482f6ef878cdb4093afbd4d8b7a2a4,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6ae907185f6d0d84b948b036ce711b3f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].time2CreateEff
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].time2CreateEff
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].time2CreateEff
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].time2CreateEff
+      value: .400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].time2CreateEff
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].time2CreateEff
+      value: .600000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].time2CreateEff
+      value: .699999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].eff
+      value: 
+      objectReference: {fileID: 432620, guid: 86104b281344cee498e4d6d8a91c0ded, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].eff
+      value: 
+      objectReference: {fileID: 432620, guid: 1957dcb6f39cc3449a10b53d5f2af870, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].eff
+      value: 
+      objectReference: {fileID: 465880, guid: 2f09f8d49d546cb409ea55db49c4da4a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].eff
+      value: 
+      objectReference: {fileID: 423076, guid: 87e2460e041f4d44590a5d4a71f6183c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].eff
+      value: 
+      objectReference: {fileID: 423076, guid: 1f775214619994b45a164f1ea10af27f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].eff
+      value: 
+      objectReference: {fileID: 423076, guid: d90814c94ebb56342aeecc9f06588ef3, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].eff
+      value: 
+      objectReference: {fileID: 423076, guid: 8119d2238e3b6a5439fbbaadc744d684, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].eff
+      value: 
+      objectReference: {fileID: 423076, guid: b75fa37da7215ec41a11693c5e5ff491, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].time2CreateEff
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].time2CreateEff
+      value: 2.0999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].time2CreateEff
+      value: 2.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].time2CreateEff
+      value: 2.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].time2CreateEff
+      value: 2.4000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].time2CreateEff
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].time2CreateEff
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].time2CreateEff
+      value: 2.70000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[8].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[9].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[10].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[11].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[13].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[14].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[15].eff
+      value: 
+      objectReference: {fileID: 400000, guid: e1129e01f43d7dd4697aa2145ec28e39, type: 2}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[12].moveEff
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].fixedOnScreen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].pos.x
+      value: 568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].pos.y
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[0].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[1].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[2].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[3].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[4].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[5].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[6].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deadEffList.Array.data[7].effMoveTimeLength
+      value: .25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 137734}
+  m_IsPrefabParent: 1
