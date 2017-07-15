@@ -1871,7 +1871,7 @@ Transform:
   - {fileID: 1543689131}
   - {fileID: 1064754519}
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 7
+  m_RootOrder: 9
 --- !u!114 &439086855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2388,6 +2388,84 @@ MonoBehaviour:
   topType: 1
   mAtlas: {fileID: 11413722, guid: abf982846d6bb214aa1763b68a9e3419, type: 2}
   mSpriteName: login_checkbox0
+  mFillCenter: 1
+--- !u!1 &541666051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 541666052}
+  - 114: {fileID: 541666053}
+  m_Layer: 5
+  m_Name: user
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &541666052
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541666051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -34, y: 48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1901857959}
+  m_RootOrder: 0
+--- !u!114 &541666053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541666051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 120
+  mHeight: 42
+  mDepth: 20
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 2.85714293
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11472124, guid: 4b202bf2fba53444cbac92bd8a61ff30, type: 2}
+  mSpriteName: im_yonghuming
   mFillCenter: 1
 --- !u!1 &566399756
 GameObject:
@@ -3473,11 +3551,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 822301477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: -142, z: 0}
+  m_LocalPosition: {x: -16, y: -142, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!114 &822301479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3495,8 +3573,8 @@ MonoBehaviour:
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
   duration: .200000003
   dragHighlight: 0
-  hoverSprite: login_reg_btn1
-  pressedSprite: login_reg_btn2
+  hoverSprite: bt_zhuce
+  pressedSprite: bt_zhuce
   disabledSprite: 
   hoverSprite2D: {fileID: 0}
   pressedSprite2D: {fileID: 0}
@@ -3533,13 +3611,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 208
-  mHeight: 70
+  mWidth: 190
+  mHeight: 68
   mDepth: 2
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.97142863
+  aspectRatio: 2.79411769
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -3550,8 +3628,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11413722, guid: abf982846d6bb214aa1763b68a9e3419, type: 2}
-  mSpriteName: login_reg_btn0
+  mAtlas: {fileID: 11472124, guid: 4b202bf2fba53444cbac92bd8a61ff30, type: 2}
+  mSpriteName: bt_zhuce
   mFillCenter: 1
 --- !u!65 &822301481
 BoxCollider:
@@ -3563,7 +3641,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 208, y: 70, z: 0}
+  m_Size: {x: 190, y: 68, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &822301482
 MonoBehaviour:
@@ -4013,12 +4091,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895182870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 245, y: -142, z: 0}
+  m_LocalPosition: {x: 264, y: -142, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1453230590}
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 6
+  m_RootOrder: 8
 --- !u!114 &895182872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4062,7 +4140,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 208, y: 70, z: 0}
+  m_Size: {x: 190, y: 68, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &895182875
 MonoBehaviour:
@@ -4081,8 +4159,8 @@ MonoBehaviour:
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
   duration: .200000003
   dragHighlight: 0
-  hoverSprite: login_login_btn1
-  pressedSprite: login_login_btn2
+  hoverSprite: bt_denglu
+  pressedSprite: bt_denglu
   disabledSprite: 
   hoverSprite2D: {fileID: 0}
   pressedSprite2D: {fileID: 0}
@@ -4119,13 +4197,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 208
-  mHeight: 70
+  mWidth: 190
+  mHeight: 68
   mDepth: 2
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.97142863
+  aspectRatio: 2.79411769
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -4136,8 +4214,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11413722, guid: abf982846d6bb214aa1763b68a9e3419, type: 2}
-  mSpriteName: login_login_btn0
+  mAtlas: {fileID: 11472124, guid: 4b202bf2fba53444cbac92bd8a61ff30, type: 2}
+  mSpriteName: bt_denglu
   mFillCenter: 1
 --- !u!1 &918175164
 GameObject:
@@ -4741,7 +4819,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3004
+  startingRenderQueue: 3006
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -5421,7 +5499,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 8
+  m_RootOrder: 10
 --- !u!114 &1114588700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5515,7 +5593,7 @@ Transform:
   m_GameObject: {fileID: 1127734024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00361010828, y: .00361010828, z: .00361010828}
+  m_LocalScale: {x: .00290697673, y: .00290697673, z: .00290697673}
   m_Children:
   - {fileID: 218925089}
   m_Father: {fileID: 0}
@@ -7493,11 +7571,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1392082385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 373, y: 126, z: 0}
-  m_LocalScale: {x: .699999988, y: .699999988, z: 1}
+  m_LocalPosition: {x: 395, y: 137, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!114 &1392082387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7528,8 +7606,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 38
-  mHeight: 38
+  mWidth: 60
+  mHeight: 60
   mDepth: 7
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -7545,8 +7623,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11413722, guid: abf982846d6bb214aa1763b68a9e3419, type: 2}
-  mSpriteName: login_close_btn
+  mAtlas: {fileID: 11472124, guid: 4b202bf2fba53444cbac92bd8a61ff30, type: 2}
+  mSpriteName: bt_close
   mFillCenter: 1
 --- !u!114 &1392082388
 MonoBehaviour:
@@ -8561,7 +8639,7 @@ Transform:
   m_Children:
   - {fileID: 740407481}
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!1 &1522157772
 GameObject:
   m_ObjectHideFlags: 0
@@ -8716,8 +8794,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11413722, guid: abf982846d6bb214aa1763b68a9e3419, type: 2}
-  mSpriteName: login_text_rempass
+  mAtlas: {fileID: 11472124, guid: 4b202bf2fba53444cbac92bd8a61ff30, type: 2}
+  mSpriteName: im_jizhumima
   mFillCenter: 1
 --- !u!1 &1594525952
 GameObject:
@@ -9314,7 +9392,7 @@ Transform:
   m_Children:
   - {fileID: 76647147}
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!114 &1804982666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9428,7 +9506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1832415854
 Transform:
   m_ObjectHideFlags: 0
@@ -9472,7 +9550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!114 &1851362800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9639,7 +9717,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3005
+  startingRenderQueue: 3007
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -9675,6 +9753,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 541666052}
+  - {fileID: 1952263282}
   - {fileID: 1392082386}
   - {fileID: 1980611516}
   - {fileID: 1851362798}
@@ -9723,7 +9803,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3003
+  startingRenderQueue: 3001
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -9848,6 +9928,84 @@ Transform:
   - {fileID: 918175165}
   m_Father: {fileID: 364356807}
   m_RootOrder: 1
+--- !u!1 &1952263281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1952263282}
+  - 114: {fileID: 1952263283}
+  m_Layer: 5
+  m_Name: password
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1952263282
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952263281}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -34, y: -23, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1901857959}
+  m_RootOrder: 1
+--- !u!114 &1952263283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952263281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 120
+  mHeight: 42
+  mDepth: 20
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 2.85714293
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11472124, guid: 4b202bf2fba53444cbac92bd8a61ff30, type: 2}
+  mSpriteName: im_mima
+  mFillCenter: 1
 --- !u!1 &1960047463
 GameObject:
   m_ObjectHideFlags: 0
@@ -10037,7 +10195,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1901857959}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!114 &1980611517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10085,8 +10243,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11413722, guid: abf982846d6bb214aa1763b68a9e3419, type: 2}
-  mSpriteName: login_bg2
+  mAtlas: {fileID: 11472124, guid: 4b202bf2fba53444cbac92bd8a61ff30, type: 2}
+  mSpriteName: bg_denglu
   mFillCenter: 1
 --- !u!1 &2022231555
 GameObject:
