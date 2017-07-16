@@ -34,41 +34,41 @@ public class RenwuManager : MonoBehaviour
             {
                 get_btn.gameObject.SetActive(true);               
             }
-           else if (notget_btn.gameObject.activeSelf)
+            if (notget_btn.gameObject.activeSelf)
             {
                 notget_btn.gameObject.SetActive(false);
             }
-           else if (ok_btn.gameObject.activeSelf)
+            if (ok_btn.gameObject.activeSelf)
             {
                 ok_btn.gameObject.SetActive(false);
             }
         }
-       else if (jsonData.retcode == "0")
+        if (jsonData.retcode == "0")
         {
             if (get_btn.gameObject.activeSelf)
             {
                 get_btn.gameObject.SetActive(false);
             }
-            else if (notget_btn.gameObject.activeSelf)
+             if (notget_btn.gameObject.activeSelf)
             {
                 notget_btn.gameObject.SetActive(false);
             }
-            else if (!ok_btn.gameObject.activeSelf)
+             if (!ok_btn.gameObject.activeSelf)
             {
                 ok_btn.gameObject.SetActive(true);
             }
         }
-      else  if (jsonData.retcode == "-1")
+       if (jsonData.retcode == "-1")
         {
             if (get_btn.gameObject.activeSelf)
             {
                 get_btn.gameObject.SetActive(false);
             }
-            else if (!notget_btn.gameObject.activeSelf)
+             if (!notget_btn.gameObject.activeSelf)
             {
                 notget_btn.gameObject.SetActive(true);
             }
-            else if (ok_btn.gameObject.activeSelf)
+             if (ok_btn.gameObject.activeSelf)
             {
                 ok_btn.gameObject.SetActive(false);
             }
@@ -79,6 +79,7 @@ public class RenwuManager : MonoBehaviour
     public void OK_BTN_OnClick()
     {
         StartCoroutine(SendPost());
+        Application.LoadLevel(Application.loadedLevelName);
     }
 
     IEnumerator SendPost()
