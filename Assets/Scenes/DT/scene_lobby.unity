@@ -1084,7 +1084,11 @@ MonoBehaviour:
   mValue: 0
   mFill: 3
   numberOfSteps: 0
-  onChange: []
+  onChange:
+  - mTarget: {fileID: 1859648610}
+    mMethodName: OnScrollBar
+    mParameters: []
+    oneShot: 0
   foreground: {fileID: 0}
   rawValue: 1
   direction: 2
@@ -1779,6 +1783,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 49791810}
   - 114: {fileID: 49791811}
+  - 65: {fileID: 49791812}
+  - 114: {fileID: 49791813}
   m_Layer: 8
   m_Name: List (13)
   m_TagString: Untagged
@@ -1793,7 +1799,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 49791809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1330.00012, z: 0}
+  m_LocalPosition: {x: 0, y: -1330, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 71781765}
@@ -1801,7 +1807,7 @@ Transform:
   - {fileID: 817897554}
   - {fileID: 1928164541}
   - {fileID: 1854339253}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 13
 --- !u!114 &49791811
 MonoBehaviour:
@@ -1836,7 +1842,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -1853,6 +1859,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao2
   mFillCenter: 1
+--- !u!65 &49791812
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 49791809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &49791813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 49791809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &53718060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,6 +2962,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 76530587}
   - 114: {fileID: 76530588}
+  - 65: {fileID: 76530589}
+  - 114: {fileID: 76530590}
   m_Layer: 8
   m_Name: List (14)
   m_TagString: Untagged
@@ -2945,7 +2978,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 76530586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1440.00012, z: 0}
+  m_LocalPosition: {x: 0, y: -1440, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 572678802}
@@ -2953,7 +2986,7 @@ Transform:
   - {fileID: 2097208149}
   - {fileID: 2020662393}
   - {fileID: 137442981}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 14
 --- !u!114 &76530588
 MonoBehaviour:
@@ -2988,7 +3021,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -3005,6 +3038,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao3
   mFillCenter: 1
+--- !u!65 &76530589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76530586}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &76530590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76530586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &78433867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,6 +3258,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 83702386}
   - 114: {fileID: 83702387}
+  - 65: {fileID: 83702388}
+  - 114: {fileID: 83702389}
   m_Layer: 8
   m_Name: List (5)
   m_TagString: Untagged
@@ -3214,14 +3274,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 83702385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -450.000061, z: 0}
+  m_LocalPosition: {x: 0, y: -450.000031, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 182934898}
   - {fileID: 1985568326}
   - {fileID: 1881509656}
   - {fileID: 92547942}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 5
 --- !u!114 &83702387
 MonoBehaviour:
@@ -3256,7 +3316,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -3273,6 +3333,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao2
   mFillCenter: 1
+--- !u!65 &83702388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83702385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &83702389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83702385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &83705927
 GameObject:
   m_ObjectHideFlags: 0
@@ -6927,7 +7012,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3017
+  startingRenderQueue: 3019
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -8060,7 +8145,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3006
+  startingRenderQueue: 3007
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -8952,7 +9037,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3009
+  startingRenderQueue: 3010
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -10434,6 +10519,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 325906283}
   - 114: {fileID: 325906284}
+  - 65: {fileID: 325906285}
+  - 114: {fileID: 325906286}
   m_Layer: 8
   m_Name: List (3)
   m_TagString: Untagged
@@ -10455,7 +10542,7 @@ Transform:
   - {fileID: 221004041}
   - {fileID: 1735771782}
   - {fileID: 1807116345}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 3
 --- !u!114 &325906284
 MonoBehaviour:
@@ -10490,7 +10577,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -10507,6 +10594,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao4
   mFillCenter: 1
+--- !u!65 &325906285
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 325906282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &325906286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 325906282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &327821285
 GameObject:
   m_ObjectHideFlags: 0
@@ -12277,6 +12389,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 386154541}
   - 114: {fileID: 386154542}
+  - 65: {fileID: 386154543}
+  - 114: {fileID: 386154544}
   m_Layer: 8
   m_Name: List (10)
   m_TagString: Untagged
@@ -12291,7 +12405,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 386154540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1000.00006, z: 0}
+  m_LocalPosition: {x: 0, y: -1000, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 111916884}
@@ -12299,7 +12413,7 @@ Transform:
   - {fileID: 91231732}
   - {fileID: 319939132}
   - {fileID: 1726640842}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 10
 --- !u!114 &386154542
 MonoBehaviour:
@@ -12334,7 +12448,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -12351,6 +12465,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao3
   mFillCenter: 1
+--- !u!65 &386154543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 386154540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &386154544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 386154540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &387352915
 GameObject:
   m_ObjectHideFlags: 0
@@ -13982,6 +14121,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 441543281}
   - 114: {fileID: 441543282}
+  - 65: {fileID: 441543283}
+  - 114: {fileID: 441543284}
   m_Layer: 8
   m_Name: List (7)
   m_TagString: Untagged
@@ -14003,7 +14144,7 @@ Transform:
   - {fileID: 948025536}
   - {fileID: 480294508}
   - {fileID: 633164814}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 7
 --- !u!114 &441543282
 MonoBehaviour:
@@ -14038,7 +14179,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -14055,6 +14196,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao4
   mFillCenter: 1
+--- !u!65 &441543283
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441543280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &441543284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441543280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &446649151
 GameObject:
   m_ObjectHideFlags: 0
@@ -14530,7 +14696,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3011
+  startingRenderQueue: 3012
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -20379,62 +20545,6 @@ MonoBehaviour:
   mAtlas: {fileID: 11456438, guid: 9962087b79f80b2419af585c0868110c, type: 2}
   mSpriteName: lobby_commonbtn_btn31
   mFillCenter: 1
---- !u!1 &645485847
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 182106, guid: 86c6f71752a101049b2c6d1c6eb03599, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 645485848}
-  - 65: {fileID: 645485850}
-  - 114: {fileID: 645485849}
-  m_Layer: 8
-  m_Name: DragScrollView
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &645485848
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 408248, guid: 86c6f71752a101049b2c6d1c6eb03599, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 645485847}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2068766329}
-  m_RootOrder: 2
---- !u!114 &645485849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11443978, guid: 86c6f71752a101049b2c6d1c6eb03599,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 645485847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollView: {fileID: 1859648610}
-  draggablePanel: {fileID: 0}
---- !u!65 &645485850
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6585200, guid: 86c6f71752a101049b2c6d1c6eb03599,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 645485847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 820, y: 450, z: 1}
-  m_Center: {x: 0, y: -60, z: 0}
 --- !u!1 &645583562
 GameObject:
   m_ObjectHideFlags: 0
@@ -22897,7 +23007,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3007
+  startingRenderQueue: 3008
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -23058,6 +23168,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 710421167}
   - 114: {fileID: 710421168}
+  - 65: {fileID: 710421169}
+  - 114: {fileID: 710421170}
   m_Layer: 8
   m_Name: List (4)
   m_TagString: Untagged
@@ -23072,14 +23184,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 710421166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -340.000031, z: 0}
+  m_LocalPosition: {x: 0, y: -340, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1773108375}
   - {fileID: 2090265641}
   - {fileID: 559306744}
   - {fileID: 416843948}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 4
 --- !u!114 &710421168
 MonoBehaviour:
@@ -23114,7 +23226,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -23131,6 +23243,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao1
   mFillCenter: 1
+--- !u!65 &710421169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710421166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &710421170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710421166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &715198005
 GameObject:
   m_ObjectHideFlags: 0
@@ -24304,6 +24441,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 754266516}
   - 114: {fileID: 754266517}
+  - 65: {fileID: 754266518}
+  - 114: {fileID: 754266519}
   m_Layer: 8
   m_Name: List (18)
   m_TagString: Untagged
@@ -24318,7 +24457,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 754266515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1880.00024, z: 0}
+  m_LocalPosition: {x: 0, y: -1880.00012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 670577681}
@@ -24326,7 +24465,7 @@ Transform:
   - {fileID: 958353618}
   - {fileID: 1644151101}
   - {fileID: 895089900}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 18
 --- !u!114 &754266517
 MonoBehaviour:
@@ -24361,7 +24500,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -24378,6 +24517,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao3
   mFillCenter: 1
+--- !u!65 &754266518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754266515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &754266519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754266515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &754406289
 GameObject:
   m_ObjectHideFlags: 0
@@ -26487,6 +26651,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 839153903}
   - 114: {fileID: 839153904}
+  - 65: {fileID: 839153905}
+  - 114: {fileID: 839153906}
   m_Layer: 8
   m_Name: List (11)
   m_TagString: Untagged
@@ -26509,7 +26675,7 @@ Transform:
   - {fileID: 366043232}
   - {fileID: 108432825}
   - {fileID: 667915892}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 11
 --- !u!114 &839153904
 MonoBehaviour:
@@ -26544,7 +26710,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -26561,6 +26727,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao4
   mFillCenter: 1
+--- !u!65 &839153905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839153902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &839153906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839153902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &845516119
 GameObject:
   m_ObjectHideFlags: 0
@@ -26627,7 +26818,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3019
+  startingRenderQueue: 3021
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -28462,6 +28653,7 @@ GameObject:
   - 114: {fileID: 933691172}
   - 136: {fileID: 933691171}
   - 114: {fileID: 933691170}
+  - 114: {fileID: 933691173}
   m_Layer: 8
   m_Name: UI_Root
   m_TagString: Untagged
@@ -28610,6 +28802,18 @@ MonoBehaviour:
   - {fileID: 1325928341}
   - {fileID: 428258904}
   - {fileID: 1133495296}
+--- !u!114 &933691173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933691165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f2998231fa6d447a39fa6dfeac44dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExitWindow: {fileID: 1044954336}
 --- !u!1 &935190777
 GameObject:
   m_ObjectHideFlags: 0
@@ -30425,6 +30629,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1006394691}
   - 114: {fileID: 1006394692}
+  - 65: {fileID: 1006394693}
+  - 114: {fileID: 1006394694}
   m_Layer: 8
   m_Name: List (9)
   m_TagString: Untagged
@@ -30447,7 +30653,7 @@ Transform:
   - {fileID: 1634822194}
   - {fileID: 1791807639}
   - {fileID: 1990013010}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 9
 --- !u!114 &1006394692
 MonoBehaviour:
@@ -30482,7 +30688,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -30499,6 +30705,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao2
   mFillCenter: 1
+--- !u!65 &1006394693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1006394690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1006394694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1006394690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1008549702
 GameObject:
   m_ObjectHideFlags: 0
@@ -30890,6 +31121,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1029407462}
   - 114: {fileID: 1029407463}
+  - 65: {fileID: 1029407464}
+  - 114: {fileID: 1029407465}
   m_Layer: 8
   m_Name: List (17)
   m_TagString: Untagged
@@ -30904,7 +31137,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1029407461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1770.00012, z: 0}
+  m_LocalPosition: {x: 0, y: -1770, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1214607892}
@@ -30912,7 +31145,7 @@ Transform:
   - {fileID: 1666645684}
   - {fileID: 332467245}
   - {fileID: 896450857}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 17
 --- !u!114 &1029407463
 MonoBehaviour:
@@ -30947,7 +31180,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -30964,6 +31197,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao2
   mFillCenter: 1
+--- !u!65 &1029407464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029407461}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1029407465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029407461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1031580768
 GameObject:
   m_ObjectHideFlags: 0
@@ -31378,6 +31636,53 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: im_head
   mFillCenter: 1
+--- !u!1 &1040594393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1040594394}
+  m_Layer: 8
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1040594394
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1040594393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1681181035}
+  - {fileID: 1420807191}
+  - {fileID: 1225230657}
+  - {fileID: 325906283}
+  - {fileID: 710421167}
+  - {fileID: 83702386}
+  - {fileID: 1506114855}
+  - {fileID: 441543281}
+  - {fileID: 1211899260}
+  - {fileID: 1006394691}
+  - {fileID: 386154541}
+  - {fileID: 839153903}
+  - {fileID: 1479795314}
+  - {fileID: 49791810}
+  - {fileID: 76530587}
+  - {fileID: 1532876936}
+  - {fileID: 1965872467}
+  - {fileID: 1029407462}
+  - {fileID: 754266516}
+  - {fileID: 1084602559}
+  m_Father: {fileID: 1859648608}
+  m_RootOrder: 0
 --- !u!1 &1044954336
 GameObject:
   m_ObjectHideFlags: 0
@@ -31444,7 +31749,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3014
+  startingRenderQueue: 3022
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -32817,6 +33122,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1084602559}
   - 114: {fileID: 1084602560}
+  - 65: {fileID: 1084602561}
+  - 114: {fileID: 1084602562}
   m_Layer: 8
   m_Name: List (19)
   m_TagString: Untagged
@@ -32831,7 +33138,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1084602558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1990, z: 0}
+  m_LocalPosition: {x: 0, y: -1990.00024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 935628062}
@@ -32839,7 +33146,7 @@ Transform:
   - {fileID: 2135608156}
   - {fileID: 1483211006}
   - {fileID: 852442882}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 19
 --- !u!114 &1084602560
 MonoBehaviour:
@@ -32874,7 +33181,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -32891,6 +33198,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao4
   mFillCenter: 1
+--- !u!65 &1084602561
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084602558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1084602562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084602558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1086496020
 GameObject:
   m_ObjectHideFlags: 0
@@ -33978,7 +34310,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3011
+  startingRenderQueue: 3012
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -37170,6 +37502,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1211899260}
   - 114: {fileID: 1211899261}
+  - 65: {fileID: 1211899262}
+  - 114: {fileID: 1211899263}
   m_Layer: 8
   m_Name: List (8)
   m_TagString: Untagged
@@ -37184,14 +37518,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1211899259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -780, z: 0}
+  m_LocalPosition: {x: 0, y: -780.000122, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1499554048}
   - {fileID: 2092640244}
   - {fileID: 1685983250}
   - {fileID: 1869572906}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 8
 --- !u!114 &1211899261
 MonoBehaviour:
@@ -37226,7 +37560,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -37243,6 +37577,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao1
   mFillCenter: 1
+--- !u!65 &1211899262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211899259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1211899263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211899259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1214440150
 GameObject:
   m_ObjectHideFlags: 0
@@ -37816,6 +38175,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1225230657}
   - 114: {fileID: 1225230658}
+  - 65: {fileID: 1225230659}
+  - 114: {fileID: 1225230660}
   m_Layer: 8
   m_Name: List (2)
   m_TagString: Untagged
@@ -37837,7 +38198,7 @@ Transform:
   - {fileID: 670484613}
   - {fileID: 2113070401}
   - {fileID: 655755934}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 2
 --- !u!114 &1225230658
 MonoBehaviour:
@@ -37872,7 +38233,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -37889,6 +38250,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao3
   mFillCenter: 1
+--- !u!65 &1225230659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225230656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1225230660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225230656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1228130624
 GameObject:
   m_ObjectHideFlags: 0
@@ -40255,7 +40641,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3015
+  startingRenderQueue: 3017
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -44627,6 +45013,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1420807191}
   - 114: {fileID: 1420807192}
+  - 65: {fileID: 1420807193}
+  - 114: {fileID: 1420807194}
   m_Layer: 8
   m_Name: List (1)
   m_TagString: Untagged
@@ -44648,7 +45036,7 @@ Transform:
   - {fileID: 1461144777}
   - {fileID: 641178104}
   - {fileID: 176295115}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 1
 --- !u!114 &1420807192
 MonoBehaviour:
@@ -44683,7 +45071,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -44700,6 +45088,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao2
   mFillCenter: 1
+--- !u!65 &1420807193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420807190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1420807194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420807190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1424924377
 GameObject:
   m_ObjectHideFlags: 0
@@ -46824,6 +47237,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1479795314}
   - 114: {fileID: 1479795315}
+  - 65: {fileID: 1479795316}
+  - 114: {fileID: 1479795317}
   m_Layer: 8
   m_Name: List (12)
   m_TagString: Untagged
@@ -46846,7 +47261,7 @@ Transform:
   - {fileID: 860370182}
   - {fileID: 1095678656}
   - {fileID: 298409804}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 12
 --- !u!114 &1479795315
 MonoBehaviour:
@@ -46881,7 +47296,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -46898,6 +47313,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao1
   mFillCenter: 1
+--- !u!65 &1479795316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479795313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1479795317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479795313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1483211005
 GameObject:
   m_ObjectHideFlags: 0
@@ -47603,6 +48043,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1506114855}
   - 114: {fileID: 1506114856}
+  - 65: {fileID: 1506114857}
+  - 114: {fileID: 1506114858}
   m_Layer: 8
   m_Name: List (6)
   m_TagString: Untagged
@@ -47624,7 +48066,7 @@ Transform:
   - {fileID: 497436777}
   - {fileID: 1389924648}
   - {fileID: 1437218985}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 6
 --- !u!114 &1506114856
 MonoBehaviour:
@@ -47659,7 +48101,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -47676,6 +48118,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao3
   mFillCenter: 1
+--- !u!65 &1506114857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1506114854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1506114858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1506114854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1525675331
 GameObject:
   m_ObjectHideFlags: 0
@@ -48163,6 +48630,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1532876936}
   - 114: {fileID: 1532876937}
+  - 65: {fileID: 1532876938}
+  - 114: {fileID: 1532876939}
   m_Layer: 8
   m_Name: List (15)
   m_TagString: Untagged
@@ -48177,7 +48646,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1532876935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1550, z: 0}
+  m_LocalPosition: {x: 0, y: -1550.00012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 545022660}
@@ -48185,7 +48654,7 @@ Transform:
   - {fileID: 586755637}
   - {fileID: 134444147}
   - {fileID: 1277513369}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 15
 --- !u!114 &1532876937
 MonoBehaviour:
@@ -48220,7 +48689,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -48237,6 +48706,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao4
   mFillCenter: 1
+--- !u!65 &1532876938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532876935}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1532876939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532876935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1533006767
 GameObject:
   m_ObjectHideFlags: 0
@@ -49097,7 +49591,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3007
+  startingRenderQueue: 3008
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -50378,7 +50872,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3007
+  startingRenderQueue: 3008
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -53581,6 +54075,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1681181035}
   - 114: {fileID: 1681181036}
+  - 65: {fileID: 1681181037}
+  - 114: {fileID: 1681181038}
   m_Layer: 8
   m_Name: List
   m_TagString: Untagged
@@ -53602,7 +54098,7 @@ Transform:
   - {fileID: 406277492}
   - {fileID: 132375787}
   - {fileID: 994349567}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 0
 --- !u!114 &1681181036
 MonoBehaviour:
@@ -53637,7 +54133,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -53654,6 +54150,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao1
   mFillCenter: 1
+--- !u!65 &1681181037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1681181034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1681181038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1681181034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1685983249
 GameObject:
   m_ObjectHideFlags: 0
@@ -54394,7 +54915,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3015
+  startingRenderQueue: 3017
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -54687,7 +55208,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3009
+  startingRenderQueue: 3010
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -59070,29 +59591,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1859648607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.27453613, z: 0}
+  m_LocalPosition: {x: 0, y: -6.10351562e-05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1681181035}
-  - {fileID: 1420807191}
-  - {fileID: 1225230657}
-  - {fileID: 325906283}
-  - {fileID: 710421167}
-  - {fileID: 83702386}
-  - {fileID: 1506114855}
-  - {fileID: 441543281}
-  - {fileID: 1211899260}
-  - {fileID: 1006394691}
-  - {fileID: 386154541}
-  - {fileID: 839153903}
-  - {fileID: 1479795314}
-  - {fileID: 49791810}
-  - {fileID: 76530587}
-  - {fileID: 1532876936}
-  - {fileID: 1965872467}
-  - {fileID: 1029407462}
-  - {fileID: 754266516}
-  - {fileID: 1084602559}
+  - {fileID: 1040594394}
   m_Father: {fileID: 2068766329}
   m_RootOrder: 0
 --- !u!114 &1859648609
@@ -59139,7 +59641,7 @@ MonoBehaviour:
   mClipSoftness: {x: 4, y: 4}
   mDepth: 12
   mSortingOrder: 0
-  mClipOffset: {x: 0, y: -66.9998779}
+  mClipOffset: {x: -2.3999989, y: -67}
 --- !u!114 &1859648610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59153,7 +59655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: 1
   dragEffect: 2
-  restrictWithinPanel: 0
+  restrictWithinPanel: 1
   disableDragIfFits: 0
   smoothDragStart: 1
   iOSDragEmulation: 1
@@ -59163,7 +59665,7 @@ MonoBehaviour:
   horizontalScrollBar: {fileID: 0}
   verticalScrollBar: {fileID: 23215152}
   showScrollBars: 1
-  customMovement: {x: 1, y: 0}
+  customMovement: {x: 1, y: 1}
   contentPivot: 1
   scale: {x: 0, y: 0, z: 0}
   relativePositionOnReset: {x: 0, y: 0}
@@ -60755,7 +61257,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3014
+  startingRenderQueue: 3022
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -61869,7 +62371,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3013
+  startingRenderQueue: 3021
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -62859,6 +63361,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1965872467}
   - 114: {fileID: 1965872468}
+  - 65: {fileID: 1965872469}
+  - 114: {fileID: 1965872470}
   m_Layer: 8
   m_Name: List (16)
   m_TagString: Untagged
@@ -62881,7 +63385,7 @@ Transform:
   - {fileID: 2037460268}
   - {fileID: 1525675332}
   - {fileID: 1920279206}
-  m_Father: {fileID: 1859648608}
+  m_Father: {fileID: 1040594394}
   m_RootOrder: 16
 --- !u!114 &1965872468
 MonoBehaviour:
@@ -62916,7 +63420,7 @@ MonoBehaviour:
   mWidth: 762
   mHeight: 108
   mDepth: 1
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 7.05555534
@@ -62933,6 +63437,31 @@ MonoBehaviour:
   mAtlas: {fileID: 11484846, guid: d6272bc7ed102504183c5ef3c5897291, type: 2}
   mSpriteName: bg_liebiao1
   mFillCenter: 1
+--- !u!65 &1965872469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1965872466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 762, y: 108, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1965872470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1965872466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 1859648610}
+  draggablePanel: {fileID: 0}
 --- !u!1 &1968515684
 GameObject:
   m_ObjectHideFlags: 0
@@ -63077,7 +63606,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3008
+  startingRenderQueue: 3009
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -64988,7 +65517,6 @@ Transform:
   m_Children:
   - {fileID: 1859648608}
   - {fileID: 23215151}
-  - {fileID: 645485848}
   m_Father: {fileID: 775659675}
   m_RootOrder: 2
 --- !u!114 &2068766330
