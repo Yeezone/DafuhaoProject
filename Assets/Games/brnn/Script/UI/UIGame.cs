@@ -264,18 +264,26 @@ namespace com.QH.QPGame.BRNN
 
         public void Init()
         {
-            GameEngine.Instance.SetTableEventHandle(new TableEventHandle(OnTableUserEvent));
-            GameEngine.Instance.AddPacketHandle(MainCmd.MDM_GF_FRAME, new PacketHandle(OnFrameResp));
-            GameEngine.Instance.AddPacketHandle(MainCmd.MDM_GF_GAME, new PacketHandle(OnGameResp));
-
-            if (!GameEngine.Instance.AutoSit || GameEngine.Instance.IsPlaying())
+            try
             {
-                GameEngine.Instance.SendUserSetting();
+                GameEngine.Instance.SetTableEventHandle(new TableEventHandle(OnTableUserEvent));
+                GameEngine.Instance.AddPacketHandle(MainCmd.MDM_GF_FRAME, new PacketHandle(OnFrameResp));
+                GameEngine.Instance.AddPacketHandle(MainCmd.MDM_GF_GAME, new PacketHandle(OnGameResp));
+                if (!GameEngine.Instance.AutoSit || GameEngine.Instance.IsPlaying())
+                {
+                    GameEngine.Instance.SendUserSetting();
+                }
+                else
+                {
+                    GameEngine.Instance.SendUserSitdown();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                GameEngine.Instance.SendUserSitdown();
+                Debug.Log(ex.ToString());
             }
+          
+              
         }
 
 		void FixedUpdate()
