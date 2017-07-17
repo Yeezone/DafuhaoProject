@@ -432,7 +432,7 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: bg_ID
-    x: 3658
+    x: 3413
     y: 1990
     width: 244
     height: 58
@@ -471,32 +471,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: bg_n1
-    x: 2132
-    y: 359
-    width: 248
-    height: 104
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 4
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: bg_n2
-    x: 3813
-    y: 1776
-    width: 248
-    height: 104
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 4
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: bg_n3
     x: 887
     y: 686
     width: 248
@@ -509,8 +483,34 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: bg_n2
+    x: 2132
+    y: 359
+    width: 248
+    height: 104
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: bg_n3
+    x: 3813
+    y: 1776
+    width: 248
+    height: 104
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: bg_name
-    x: 3413
+    x: 3658
     y: 1990
     width: 244
     height: 58
@@ -549,7 +549,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: bt_bjl
-    x: 1493
+    x: 1704
     y: 836
     width: 210
     height: 312
@@ -601,8 +601,8 @@ MonoBehaviour:
     paddingTop: 10
     paddingBottom: 14
   - name: bt_fuzhiID
-    x: 1115
-    y: 419
+    x: 1114
+    y: 307
     width: 102
     height: 50
     borderLeft: 0
@@ -627,8 +627,8 @@ MonoBehaviour:
     paddingTop: 16
     paddingBottom: 8
   - name: bt_goumai
-    x: 1115
-    y: 368
+    x: 1114
+    y: 256
     width: 102
     height: 50
     borderLeft: 0
@@ -692,8 +692,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 1
   - name: bt_renwu
-    x: 1170
-    y: 812
+    x: 1115
+    y: 419
     width: 103
     height: 50
     borderLeft: 0
@@ -717,6 +717,19 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: bt_tuichu
+    x: 1170
+    y: 796
+    width: 82
+    height: 66
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: bt_weixuan
     x: 1926
     y: 1527
@@ -731,8 +744,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: bt_xiugai
-    x: 1114
-    y: 307
+    x: 1115
+    y: 368
     width: 102
     height: 50
     borderLeft: 0
@@ -758,7 +771,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: bt_yinhang
     x: 1114
-    y: 256
+    y: 205
     width: 101
     height: 50
     borderLeft: 0
@@ -770,7 +783,7 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 1
   - name: bt_ylc
-    x: 1704
+    x: 1493
     y: 836
     width: 210
     height: 312
@@ -809,8 +822,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 1
   - name: hall_icon1
-    x: 1136
-    y: 693
+    x: 1115
+    y: 582
     width: 112
     height: 97
     borderLeft: 0
@@ -822,8 +835,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 2
   - name: hall_icon1_down
-    x: 1115
-    y: 582
+    x: 1136
+    y: 693
     width: 112
     height: 97
     borderLeft: 0
@@ -926,7 +939,7 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 2
   - name: im_jinbi
-    x: 1218
+    x: 1219
     y: 412
     width: 58
     height: 57
@@ -966,7 +979,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: im_n1
     x: 1114
-    y: 200
+    y: 149
     width: 58
     height: 55
     borderLeft: 0
@@ -979,7 +992,7 @@ MonoBehaviour:
     paddingBottom: 3
   - name: im_n2
     x: 1173
-    y: 200
+    y: 149
     width: 58
     height: 55
     borderLeft: 0
@@ -992,7 +1005,7 @@ MonoBehaviour:
     paddingBottom: 3
   - name: im_n3
     x: 1114
-    y: 144
+    y: 93
     width: 58
     height: 55
     borderLeft: 0
